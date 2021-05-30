@@ -19,7 +19,7 @@ body {
   font-family: "Montseratt-Medium", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header {
+header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -30,7 +30,7 @@ body {
 
 /* Header Logo Section */
 
-.header .logo-section {
+header .logo-section {
   margin: 2px;
   display: flex;
   flex-direction: row;
