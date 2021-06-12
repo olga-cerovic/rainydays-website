@@ -1,0 +1,31 @@
+/* CONTACT PAGE */
+
+.contact-us,
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-us > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.follow-us,
+.payment-options {
+  /* margin-bottom: 15px;
+  margin-right: 15px; */
+  display: flex;
+  flex-direction: row;
+  font-size: 3em;
+}
+
+.follow-us > i {
+  margin-right: 20px;
+}
+
+.follow-us:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+/*
+**FONTS**
+*/
+
+@font-face {
+  font-family: "Montseratt-Medium";
+  src: url("..fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montseratt-SemiBold";
+  src: url("..fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
