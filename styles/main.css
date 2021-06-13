@@ -52,21 +52,6 @@ main h1 {
   margin-bottom: 20px;
 }
 
-.pushing-the-comfort-zone {
-  max-width: 40%;
-  padding: 0 20px;
-}
-
-.pushing-the-comfort-zone h2 {
-  color: #6b7f7e;
-  font-size: 2.5em;
-}
-
-.pushing-the-comfort-zone p {
-  color: #6b7f7e;
-  margin-bottom: 10px;
-}
-
 /* MAIN SECTION PRODUCT SPECIFIC PAGE*/
 
 .main-content-product {
@@ -97,9 +82,5 @@ main h1 {
 @media (max-width: 992px) {
   .main-content-shop {
     flex-direction: column-reverse;
-  }
-  .pushing-the-comfort-zone {
-    max-width: 100%;
-    margin-bottom: 40px;
   }
 }

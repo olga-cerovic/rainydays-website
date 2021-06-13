@@ -2,12 +2,12 @@
 @import "./header.css";
 @import "./footer.css";
 @import "./main.css";
-@import "./signup.css";
+@import "./sign-up.css";
 @import "./product.css";
 @import "./contact.css";
 @import "./cart.css";
 @import "./overlay.css";
-@import "./shared-styles.css";
+@import "./global-styles.css";
 
 body {
   margin: 0;

@@ -56,9 +56,16 @@ ul {
   cursor: pointer;
 }
 
-.checkbox-trigger:checked ~ .overlay,
-.checkbox-trigger:checked ~ .product-aside {
+.checkbox-trigger:checked ~ .popup {
   display: flex;
+}
+
+.checkbox-trigger:checked ~ .product-aside {
+  opacity: 1;
+}
+
+.checkbox-trigger:checked ~ .overlay {
+  transform: translateX(0);
 }
 
 .has-background {

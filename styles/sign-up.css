@@ -19,37 +19,6 @@
   margin-bottom: 20px;
 }
 
-.sign-up-section .button {
-  font-size: 1.5em;
-  padding: 10px 50px;
-}
-
-@media (max-width: 576px) {
-  .sign-up-section {
-    flex: auto;
-  }
-}
-.sign-up-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding-top: 30px;
-  flex: 1;
-  align-self: baseline;
-}
-
-.sign-up-section p {
-  text-transform: uppercase;
-  font-family: "Montseratt-Medium", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.8em;
-  color: #6b7f7e;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .sign-up-section .cta {
   font-size: 1.5em;
   padding: 10px 50px;
