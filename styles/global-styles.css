@@ -20,7 +20,7 @@ a {
   border: 0;
   outline: none;
   border-radius: 8px;
-  background-color: #ffa500;
+  background-color: #f29202;
   color: #fff;
   text-align: center;
   font-size: 1em;
@@ -30,7 +30,7 @@ a {
 }
 
 .cta-red {
-  background-color: #fa4901;
+  background-color: ##fa4901;
 }
 
 .hidden {

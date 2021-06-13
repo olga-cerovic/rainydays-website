@@ -49,7 +49,7 @@
 .product-info {
   max-width: 40%;
   padding: 10px;
-  color: #777;
+  color: #6b7f7e;
 }
 
 .product-image {
@@ -61,11 +61,11 @@
 }
 
 .product-review a {
-  color: #ffa500;
+  color: #f29202;
 }
 
 .stars {
-  color: #ffa500;
+  color: #f29202;
 }
 
 .stars ul {
@@ -82,7 +82,7 @@
 }
 
 .sizes {
-  color: #ffa500;
+  color: #f29202;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
