@@ -61,7 +61,7 @@ ul {
 }
 
 .checkbox-trigger:checked ~ .product-aside {
-  opacity: 1;
+  display: flex;
 }
 
 .checkbox-trigger:checked ~ .overlay {

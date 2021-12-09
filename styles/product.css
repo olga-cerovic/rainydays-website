@@ -42,8 +42,12 @@
   bottom: 100px;
   padding: 100px 20px 20px;
   z-index: 100;
-  opacity: 0;
+  display: none;
   transition: opacity 0.4s ease;
+}
+
+.details-image {
+  display: block;
 }
 
 .product-info {
@@ -129,7 +133,7 @@
     padding: 10px;
   }
   .product-aside {
-    position: sticky;
+    position: initial;
     top: 140px;
     left: 0;
     right: 0;
@@ -158,6 +162,9 @@
   .main-content-shop.outlet .product-aside {
     max-width: 100%;
   }
+  .checkbox-trigger:checked ~ .product-aside {
+    display: block;
+  }
 }
 
 @media (max-width: 576px) {
@@ -168,10 +175,14 @@
     flex: 1 1 100%;
   }
   .product-aside {
-    flex-direction: column;
+    flex-direction: relative;
+    position: initial;
   }
   .product-info,
   .product-image {
     max-width: 100%;
+  }
+  .details-image {
+    display: none;
   }
 }
