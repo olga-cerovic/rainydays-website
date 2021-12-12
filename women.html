@@ -48,31 +48,12 @@
               <p>Your cart</p>
               <img src="./images/cart-icon.png" alt="Cart Icon" class="cart-icon" />
               <label class="hidden checkbox-trigger" for="yourcart1"></label>
-              <input class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
+              <input onclick="showCart()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
               <div class="overlay cart-overlay">
                 <a href="women.html">
                 <div class="overlay-inside cart">
                     <h2>Your Cart</h2>
-                    <ul>
-                      <li>
-                        <span class="cart-img">
-                          <img src="./images/red-man.jpg" alt="Red Jacket for Men" />
-                        </span>
-                        <span>x1</span>
-                        <span>98 $</span>
-                      </li>
-                      <li>
-                        <span class="cart-img">
-                          <img src="./images/red-man.jpg" alt="Red Jacket for Men" />
-                        </span>
-                        <span>x1</span>
-                        <span>98 $</span>
-                      </li>
-                      <li class="total">
-                        <span>Total</span>
-                        <span>228 $</span>
-                      </li>
-                    </ul>
+                    <div id="cart-div"></div>
                     <button class="cta cta-red" type="cta">Check Out</button>
                     <label class="hidden checkbox-trigger" for="order3"></label>
                     <input class="hidden checkbox-trigger" type="checkbox" id="order3">
@@ -224,10 +205,11 @@
                       <ul><li>S</li><li>M</li><li>L</li><li>XL</li></ul>
                     </div>
                     <div class="product-checkout-button">
-                      <button class="cta" type="text">Add to Cart</button>
-                      <label class="hidden checkbox-trigger" for="addtocart1"></label>
+                      <button class="cta" type="text" onclick="addToCart('Orange Jacket for Women', '1', './images/orange-woman.jpg')">Add to Cart</button>
+                     <!-- <label class="hidden checkbox-trigger" for="addtocart1"></label>
                       <input class="hidden checkbox-trigger" type="checkbox" id="addtocart1">
-                      <div class="overlay cart-overlay">
+                      -->
+                 <!--     <div class="overlay cart-overlay">
                         <div class="overlay-inside cart">
                           <h2>Your Cart</h2>
                           <ul>
@@ -262,7 +244,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                   </div>
@@ -304,32 +286,14 @@
                       <ul><li>S</li><li>M</li><li>L</li><li>XL</li></ul>
                     </div>
                     <div class="product-checkout-button">
-                      <button class="cta" type="text">Add to Cart</button>
-                      <label class="hidden checkbox-trigger" for="addtocart2"></label>
+                      <button class="cta" type="text" onclick="addToCart('Black Jacket for Women', 2, './images/black-woman.jpg')">Add to Cart</button>
+                  <!--   <label class="hidden checkbox-trigger" for="addtocart2"></label>
                       <input class="hidden checkbox-trigger" type="checkbox" id="addtocart2">
+
+                      --> 
                       <div class="overlay cart-overlay">
                         <div class="overlay-inside cart">
-                          <h2>Your Cart</h2>
-                          <ul>
-                            <li>
-                              <span class="cart-img">
-                                <img src="./images/black-woman.jpg" alt="Black Jacket for Women"/>
-                              </span>
-                              <span>x1</span>
-                              <span>98 $</span>
-                            </li>
-                            <li>
-                              <span class="cart-img">
-                                <img src="./images/black-woman.jpg" alt="Black Jacket for Women"/>
-                              </span>
-                              <span>x1</span>
-                              <span>98 $</span>
-                            </li>
-                            <li class="total">
-                              <span>Total</span>
-                              <span>228 $</span>
-                            </li>
-                          </ul>
+                          <button onclick="showCart()">Your Cart</button>
                           <button class="cta cta-red" type="cta">Check Out</button>
                           <label class="hidden checkbox-trigger" for="order2"></label>
                           <input class="hidden checkbox-trigger" type="checkbox" id="order2">
@@ -717,5 +681,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/cart.js"></script>
   </body>
 </html>
