@@ -13,6 +13,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+
     <title>Rainy days | Women</title>
     <!-- Hotjar Tracking Code for https://silly-volhard-7894ac.netlify.app -->
 <script>
@@ -50,13 +52,15 @@
               <label class="hidden checkbox-trigger" for="yourcart1"></label>
               <input onclick="showCart()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
               <div class="overlay cart-overlay">
-                <a href="women.html">
+            <!--    <a href="women.html"> -->
                 <div class="overlay-inside cart">
                     <h2>Your Cart</h2>
                     <div id="cart-div"></div>
-                    <button class="cta cta-red" type="cta">Check Out</button>
-                    <label class="hidden checkbox-trigger" for="order3"></label>
+                    <button class="cta cta-red" type="cta" onclick="showModal()">Check Out</button>
+            <!--        <label class="hidden checkbox-trigger" for="order3"></label>
                     <input class="hidden checkbox-trigger" type="checkbox" id="order3">
+                    -->
+
                     <div class="popup order-popup">
                       <div class="has-background" style="background-image:url('./images/jackets-homepage.jpg');">
                         <div class="order-popup-text">
@@ -681,6 +685,20 @@
         </div>
       </div>
     </footer>
+            <!--Modal -->
+            <div id="checkOutModal" class="check-out-modal">
+              <div class="check-out-modal-content">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                <div class="check-out-modal-body">
+                  <p>Thank you for your purchase</p>
+                </div>
+                </div>
+              </div>
+              </div>
+        
+            </div>
     <script src="./js/cart.js"></script>
+    <script src="./js/modal-script.js"></script>
+
   </body>
 </html>

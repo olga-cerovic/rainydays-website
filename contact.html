@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/contact-form.css" />
     <title>Rainy days | Home</title>
     <!-- Hotjar Tracking Code for https://silly-volhard-7894ac.netlify.app -->
     <script>
@@ -90,23 +91,6 @@
                         <span>228 $</span>
                       </li>
                     </ul>
-                    <!-- Modal -->
-                    <button id="check-out-button">Open Modal</button>
-                    <div id="check-out-modal" class="check-out-modal-main">
-                      <div class="check-out-modal-content">
-                        <div class="check-out-modal-header">
-                          <span class="check-out-modal-close">&times;</span>
-                          <h2>Modal Header</h2>
-                        </div>
-                        <div class="check-out-modal-modal-body">
-                          <p>Some text in the Modal Body</p>
-                          <p>Some other text...</p>
-                        </div>
-                        <div class="check-out-modal-footer">
-                          <h3>Modal Footer</h3>
-                        </div>
-                      </div>
-                    </div>
                  <!--   <label class="hidden checkbox-trigger" for="order3"></label>
                     <input
                       class="hidden checkbox-trigger"
@@ -212,47 +196,58 @@
           </li>
         </ul>
         <div class="map">
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to add a google map to your website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>        </div>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" 
+                src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" scrolling="no" marginheight="0" 
+                marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;
+                    text-align:right;height:500px;width:600px;}</style>
+                    <a href="https://www.embedgooglemap.net">how to add a google map to your website</a>
+                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+                </div></div>        </div>
+                <div id="succesfullSumbition">
+                    <p> Your message was sent. We will contact you within 5 work days.</p>
+                </div>
         <div class="contact-form-container">
-            <div>
-            <label>First Name</label>
-            <input
-              type="text"
-              id="first-name"
-              name="firstname"
-              placeholder="First name"
-            />
-            </div>
-
-            <div>
-            <label>Last Name</label>
-            <input
-              type="text"
-              id="last-name"
-              name="lastname"
-              placeholder="Last name"
-            />
-            </div>
-
-            <div>
-            <label>Email</label>
-            <input
-              type="text"
-              id="e-mail"
-              name="email"
-              placeholder="Email"
-            />
-            </div>
-            <div>
-            <label>Message</label>
-            <textarea
-              id="message"
-              name="message"
-              style="height: 200px"
-            ></textarea>
-            </div>
-            <div>
-            <input type="submit" value="Submit" />
+            <form id="contactForm">
+                <div>
+                  <label>
+                    First name (required)
+                    <input name="firstName" id="firstName" />
+                  </label>
+                  <div class="form-error" id="firstNameError">
+                    Please enter your first name.
+                  </div>
+                </div>
+        
+                <div>
+                  <label>
+                    Last name (required)
+                    <input name="lastName" id="lastName" />
+                  </label>
+                  <div class="form-error" id="lastNameError">
+                    Your last name must be at least 4 characters
+                  </div>
+                </div>
+        
+                <div>
+                  <label>
+                    Email (required)
+                    <input name="email" id="email" />
+                  </label>
+                  <div class="form-error" id="emailError">
+                    Please enter a valid email address. Example email@email.com
+                  </div>
+                </div>
+                <div>
+                    <label>
+                      Message
+                      <input name="message" id="message" />
+                    </label>
+                    <div class="form-error" id="messageError">
+                        Your message must be at least 10 characters.
+                    </div>
+                <button id="button">Send message</button>
+              </form>
             </div>
           </form>
         </div>
@@ -288,7 +283,10 @@
         </div>
       </div>
     </footer>
+            <!-- Modal -->
     <script src="./js/hamburger-menu-script.js"></script>
     <script src="./js/modal-script.js"></script>
+    <script src="./js/contact-form.js"></script>
+
   </body>
 </html>

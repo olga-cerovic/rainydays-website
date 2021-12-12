@@ -1,18 +1,15 @@
-const checkOutModal = document.getElementById("check-out-modal");
-
-const checkOutButton = document.getElementById("check-out-button");
-
-const closingSpan = document.getElementsByClassName("check-out-modal-close")[0];
-
-checkOutButton.onclick = function () {
+const showModal = () => {
+  const checkOutModal = document.getElementById("checkOutModal");
   checkOutModal.style.display = "block";
 };
 
-closingSpan.onclick = function () {
+const closeModal = () => {
+  const checkOutModal = document.getElementById("checkOutModal");
   checkOutModal.style.display = "none";
 };
 
 window.onclick = function (event) {
+  const checkOutModal = document.getElementById("checkOutModal");
   if (event.target == checkOutModal) {
     checkOutModal.style.display = "none";
   }

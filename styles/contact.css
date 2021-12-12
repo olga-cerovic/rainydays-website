@@ -32,8 +32,8 @@
 
 .follow-us,
 .payment-options {
-  /* margin-bottom: 15px;
-  margin-right: 15px; */
+  margin-bottom: 15px;
+  margin-right: 15px;
   display: flex;
   flex-direction: row;
   font-size: 3em;
