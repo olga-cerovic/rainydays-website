@@ -1,5 +1,6 @@
 /* CONTACT PAGE */
 
+/*
 .contact-us,
 .contact-header {
   display: flex;
@@ -7,10 +8,26 @@
   text-decoration: none;
   color: #fff;
 }
+*/
+
+.main-content img {
+  width: 60px;
+  height: 60px;
+}
+
+.main-content ul {
+  margin-right: 15px;
+  display: inline-block;
+  align-items: center;
+}
 
 .contact-us > a {
   text-decoration: none;
   color: #fff;
+}
+
+.contact-form-container {
+  display: block;
 }
 
 .follow-us,

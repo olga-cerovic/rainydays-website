@@ -10,6 +10,7 @@
     ></script>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
     <title>Rainy days | Home</title>
     <!-- Hotjar Tracking Code for https://silly-volhard-7894ac.netlify.app -->
     <script>
@@ -91,19 +92,19 @@
                     </ul>
                     <!-- Modal -->
                     <button id="check-out-button">Open Modal</button>
-
                     <div id="check-out-modal" class="check-out-modal-main">
                       <div class="check-out-modal-content">
                         <div class="check-out-modal-header">
                           <span class="check-out-modal-close">&times;</span>
+                          <h2>Modal Header</h2>
                         </div>
                         <div class="check-out-modal-modal-body">
-                          <p>
-                            Thank you for your purchase! We will send you an
-                            email with confirmation shortly!
-                          </p>
+                          <p>Some text in the Modal Body</p>
+                          <p>Some other text...</p>
                         </div>
-                        <div class="check-out-modal-footer"></div>
+                        <div class="check-out-modal-footer">
+                          <h3>Modal Footer</h3>
+                        </div>
                       </div>
                     </div>
                     <label class="hidden checkbox-trigger" for="order3"></label>
@@ -148,6 +149,7 @@
           <div class="information-section">
             <a href="#">SIGN IN | SIGN UP</a>
             <a href="about.html">About Us</a>
+            <!---->
             <a href="contact.html">Contact</a>
           </div>
         </div>
@@ -186,11 +188,75 @@
     </header>
     <main>
       <div class="main-content">
-        <img
-          src="./images/jackets-homepage.jpg"
-          alt="Homepage Background Image"
-          class="background-image"
-        />
+        <h2>Contact Us</h2>
+        <ul>
+          <li>
+            <span class="icon-img"
+              ><img src="./images/email-icon.png" alt=""
+            /></span>
+            <span class="contact-us-text">rainydays@rainydays.no</span>
+          </li>
+          <li>
+            <span class="icon-img"
+              ><img src="./images/phone-icon.png" alt=""
+            /></span>
+            <span class="contact-us-text">+4780000000</span>
+          </li>
+          <li>
+            <span class="icon-img"
+              ><img src="./images/location-icon.png" alt=""
+            /></span>
+            <span class="contact-us-text"
+              >Bergliveien 136, 1212 Oslo, Norway</span
+            >
+          </li>
+        </ul>
+        <div class="map">
+          <img src="./images/map.jpg" alt="map" />
+        </div>
+        <div class="contact-form-container">
+            <div>
+            <label>First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="firstname"
+              placeholder="First name"
+            />
+            </div>
+
+            <div>
+            <label>Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="lastname"
+              placeholder="Last name"
+            />
+            </div>
+
+            <div>
+            <label>Email</label>
+            <input
+              type="text"
+              id="e-mail"
+              name="email"
+              placeholder="Email"
+            />
+            </div>
+            <div>
+            <label>Message</label>
+            <textarea
+              id="message"
+              name="message"
+              style="height: 200px"
+            ></textarea>
+            </div>
+            <div>
+            <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
       </div>
     </main>
     <footer>
