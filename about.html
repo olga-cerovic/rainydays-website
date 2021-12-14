@@ -10,6 +10,7 @@
     ></script>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/cart.css" />
     <title>Rainy days | Home</title>
     <!-- Hotjar Tracking Code for https://silly-volhard-7894ac.netlify.app -->
     <script>
@@ -53,48 +54,27 @@
                 alt="Cart Icon"
                 class="cart-icon"
               />
-              <label class="hidden checkbox-trigger" for="yourcart1"></label>
-              <input
+    <!--          <label class="hidden checkbox-trigger" for="yourcart1"></label>       -->
+              <input onclick="showCart()"
                 class="hidden checkbox-trigger"
                 type="checkbox"
                 id="yourcart1"
               />
               <div class="overlay cart-overlay">
-                <a href="index.html">
+      <!--          <a href="index.html">           -->
                   <div class="overlay-inside cart">
                     <h2>Your Cart</h2>
-                    <ul>
-                      <li>
-                        <span class="cart-img">
-                          <img
-                            src="./images/red-man.jpg"
-                            alt="Red Jacket for Men"
-                          />
-                        </span>
-                        <span>x1</span>
-                        <span>98 $</span>
-                      </li>
-                      <li>
-                        <span class="cart-img">
-                          <img
-                            src="./images/red-man.jpg"
-                            alt="Red Jacket for Men"
-                          />
-                        </span>
-                        <span>x1</span>
-                        <span>98 $</span>
-                      </li>
-                      <li class="total">
-                        <span>Total</span>
-                        <span>228 $</span>
-                      </li>
-                    </ul>
-                    <label class="hidden checkbox-trigger" for="order3"></label>
-                    <input
+                    <div id="cart-div"></div>
+                    <button class="cta cta-red" type="cta" onclick="showModal()">Check Out</button>
+      <!--              <label class="hidden checkbox-trigger" for="order3"></label>
+                    <input 
                       class="hidden checkbox-trigger"
                       type="checkbox"
                       id="order3"
-                    />
+                    />       
+                  
+                  
+
                     <div class="popup order-popup">
                       <div
                         class="has-background"
@@ -106,8 +86,8 @@
                           <p>Thank you for your order.</p>
                           <p>We have sent order confirmation to your email.</p>
                         </div>
-                      </div>
-                    </div>
+                      </div>    
+                    </div>       -->
                   </div>
                 </a>
               </div>
@@ -218,8 +198,20 @@
         </div>
       </div>
     </footer>
-    <!-- Modal -->
+            <!--Modal -->
+            <div id="checkOutModal" class="check-out-modal">
+              <div class="check-out-modal-content">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                <div class="check-out-modal-body">
+                  <p>Thank you for your purchase</p>
+                </div>
+                </div>
+              </div>
+              </div>
+        
+            </div>
     <script src="./js/hamburger-menu-script.js"></script>
+    <script src="./js/cart.js"></script>
     <script src="./js/modal-script.js"></script>
   </body>
 </html>

@@ -23,6 +23,8 @@ input {
   padding-bottom: 200px;
 }
 
+/*
+
 button {
   background: rgb(11, 91, 133);
   border: none;
@@ -33,6 +35,8 @@ button {
   cursor: pointer;
   border-radius: 0.2rem;
 }
+
+*/
 
 label {
   display: block;
