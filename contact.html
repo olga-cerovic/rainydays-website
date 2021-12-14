@@ -173,25 +173,17 @@
           </li>
         </ul>
         <div class="map">
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" 
-                src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                frameborder="0" scrolling="no" marginheight="0" 
-                marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;
-                    text-align:right;height:500px;width:600px;}</style>
-                    <a href="https://www.embedgooglemap.net">how to add a google map to your website</a>
-                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
-                </div></div>        </div>
-                <div id="succesfullSumbition">
-                    <p> Your message was sent. We will contact you within 5 work days.</p>
-                </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32004.489147108878!2d10.69800843655968!3d59.910890807636335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416bb3f8b7d64b%3A0x9cad8a439f8859cc!2sSentrum%2C%20Oslo!5e0!3m2!1sen!2sno!4v1639492643681!5m2!1sen!2sno" 
+          allowfullscreen="" loading="lazy"></iframe></div>
         <div class="contact-form-container">
+          <p id="formError"></p>
             <form id="contactForm">
                 <div>
                   <label>
                     First name (required)
                     <input name="firstName" id="firstName" />
                   </label>
-                  <div class="form-error" id="firstNameError">
+                  <div class="field-error" id="firstNameError">
                     Please enter your first name.
                   </div>
                 </div>
@@ -201,17 +193,17 @@
                     Last name (required)
                     <input name="lastName" id="lastName" />
                   </label>
-                  <div class="form-error" id="lastNameError">
+                  <div class="field-error" id="lastNameError">
                     Your last name must be at least 4 characters
                   </div>
                 </div>
-        
+                <p id="form-error"></p>
                 <div>
                   <label>
                     Email (required)
                     <input name="email" id="email" />
                   </label>
-                  <div class="form-error" id="emailError">
+                  <div class="field-error" id="emailError">
                     Please enter a valid email address. Example email@email.com
                   </div>
                 </div>
@@ -220,10 +212,10 @@
                       Message
                       <input name="message" id="message" />
                     </label>
-                    <div class="form-error" id="messageError">
+                    <div class="field-error" id="messageError">
                         Your message must be at least 10 characters.
                     </div>
-                <button id="button">Send message</button>
+                <button type="submit" id="formButton" onclick="validateForm()">Send message</button>
               </form>
             </div>
           </form>

@@ -7,8 +7,8 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
-const succesfullSubmission = document.querySelector("#succesfullSumbition");
-const button = document.querySelector("#button");
+const button = document.querySelector("#formButton");
+const formError = document.querySelector("#formError");
 
 function checkForm(event) {
   event.preventDefault();
@@ -40,7 +40,7 @@ function checkForm(event) {
   console.log("hello");
 }
 
-form.addEventListener("submit", checkForm);
+form.addEventListener("submit", checkForm, validateForm);
 
 function checkLength(value, len) {
   if (value.trim().length > len) {
@@ -64,6 +64,7 @@ function validateForm() {
     checkLength(message.value, 10)
   ) {
     button.disabled = false;
-    succesfullSubmission.innerHTML = "Form submited successfully.";
+    formError.innerHTML = "Form submited successfully.";
   }
+  console.log("hello11111");
 }

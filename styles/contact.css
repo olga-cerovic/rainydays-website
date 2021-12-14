@@ -46,3 +46,9 @@
 .follow-us:hover {
   cursor: pointer;
 }
+
+iframe {
+  width: 600px;
+  height: 450px;
+  border: 0;
+}

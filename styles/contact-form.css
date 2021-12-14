@@ -43,16 +43,21 @@ label {
   margin-top: 1.5rem;
 }
 
-.form-error {
+.field-error {
   display: none;
   color: red;
   font-size: 1rem;
   margin-top: 5px;
-  z-index: 100000;
 }
 
-#succesfullSumbition {
+#formError {
+  z-index: 10000000;
+}
+
+#formError {
   margin-top: 70px;
   text-align: center;
-  color: blue;
+  color: #0b3a40;
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
