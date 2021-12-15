@@ -125,6 +125,14 @@
   margin-bottom: 10px;
 }
 
+.close-product {
+  position: absolute;
+}
+
+.open-product {
+  color: green;
+}
+
 @media (max-width: 992px) {
   .products {
     max-width: 100%;

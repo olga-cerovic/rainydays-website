@@ -21,6 +21,21 @@
   border: 0 none;
 }
 
+.deals-title h1 {
+  color: white;
+  text-align: center;
+  font-family: "Montseratt-Medium", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  background-color: #0b3a40;
+  margin-left: 0px;
+  padding: 1.5rem;
+  margin-top: 0px;
+}
+
+.best-deals {
+  display: flex;
+}
+
 /* MAIN CONTENT SECTION SHOP*/
 
 .main-content-shop {
@@ -81,6 +96,9 @@ main h1 {
 
 @media (max-width: 992px) {
   .main-content-shop {
+    flex-direction: column-reverse;
+  }
+  .best-deals {
     flex-direction: column-reverse;
   }
 }
