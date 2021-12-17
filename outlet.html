@@ -49,24 +49,12 @@
             <div class="your-cart">
               <p>Your cart</p>
               <img src="./images/cart-icon.png" alt="Cart Icon" class="cart-icon" />
-     <!--         <label class="hidden checkbox-trigger" for="yourcart1"></label>   -->
               <input onclick="showCart()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
               <div class="overlay cart-overlay">
-      <!--          <a href="outlet.html">      -->
                 <div class="overlay-inside cart">
                     <h2>Your Cart</h2>
                     <div id="cart-div"></div>
                     <button class="cta cta-red" type="cta" onclick="showModal()">Check Out</button>
-    <!--            <label class="hidden checkbox-trigger" for="order3"></label>
-                    <input class="hidden checkbox-trigger" type="checkbox" id="order3">
-                    <div class="popup order-popup">
-                      <div class="has-background" style="background-image:url('./images/jackets-homepage.jpg');">
-                        <div class="order-popup-text">
-                          <p>Thank you for your order.</p>
-                          <p>We have sent order confirmation to your email.</p>
-                        </div>
-                      </div>
-                    </div>     -->
                   </div>
                 </a>
               </div>
@@ -90,57 +78,15 @@
           <div class="information-section">
             <a href="#">SIGN IN | SIGN UP</a>
             <a href="./about.html">About Us
-    <!--        <div class="overlay-trigger">
-              <label class="hidden checkbox-trigger" for="addtocart1"></label>
-              <input class="hidden checkbox-trigger" type="checkbox" id="addtocart1">
-              <div class="overlay about-overlay">
-                <div class="overlay-inside about">
-                  <h2>About Us</h2>
-                  <h3>How did we start?</h3>
-                  <img src="./images/man-sewing.jpg" alt="about us image" />
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio nulla laudantium pariatur consequatur necessitatibus, expedita ratione, aliquam fugiat mollitia modi! Velit nisi animi inventore recusandae laboriosam exercitationem vel facilis?</p>
-                  <h3>What is our goal?</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis eveniet, dolorem maxime esse error laborum temporibus obcaecati hic delectus a, tempore reiciendis earum quae repellendus quaerat similique quod, ea fugiat!</p>
-                </div>
-              </div>
-            </div>
-            -->
           </a>
             <a href="./contact.html">Contact
-  <!--      <div class="overlay-trigger">
-              <label class="hidden checkbox-trigger" for="addtocart1"></label>
-              <input class="hidden checkbox-trigger" type="checkbox" id="addtocart1">
-              <div class="overlay contact-overlay">
-                <div class="overlay-inside contact">
-                  <h2>Contact Us</h2>
-                  <ul>
-                    <li>
-                      <span class="icon-img"><img src="./images/email-icon.png" alt=""/></span>
-                      <span>rainydays@rainydays.no</span>
-                    </li>
-                    <li>
-                      <span class="icon-img"><img src="./images/phone-icon.png" alt=""/></span>
-                      <span>+4780000000</span>
-                    </li>
-                    <li>
-                      <span class="icon-img"><img src="./images/location-icon.png" alt=""/></span>
-                      <span>Bergliveien 136, 1212 Oslo, Norway</span>
-                    </li>
-                  </ul>
-                  <div class="map">
-                    <img src="./images/map.jpg" alt="map" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            -->
           </a>
           </div>
         </div>
         <label for="hamburger-menu" class="hamburger-menu-label">
           <li class="fas fa-bars"></li>
         </label>
-        <input type="checkbox" id="hamburger-menu" />
+        <input type="checkbox" id="hamburger-menu" onclick="handleHamburgerMenuButton()"/>
         <div class="navigation-mobile">
           <div class="shop-section">
             <a href="men.html">Men</a>
@@ -173,250 +119,34 @@
           <div class="products">
             <div class="product">
               <div class="product-clickable">
-                <label class="hidden checkbox-trigger" for="item4">item4</label>
-                <input class="hidden checkbox-trigger" type="checkbox" id="item4">
-                <img src="./images/blue-woman.jpg" alt="Blue Jacket for Women"/>
+                <img src="./images/blue-woman.jpg" alt="Blue Outlet Jacket for Women"/>
+                <a href="./detailed-pages/outlet-blue.html" class="show-product-link">Show product</a>
                 <div>
                   <p>$121</p>
                   <p>Color: Red</p>
                   <p>Suitable for: rain, wind</p>
                 </div>
-                <div class="product-aside">
-                  <div class="product-info">
-                    <div class="product-title">
-                      <h3>About this jacket</h3>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, neque mollitia consequatur velit autem aliquam. Provident tenetur sit suscipit recusandae minus inventore animi similique eaque autem repellat! Illo, repellat labore?</p>
-                    </div>
-                    <div class="product-review">
-                      <h3>Customers reviews</h3>
-                      <div class="stars">
-                        <ul>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                        </ul>
-                      </div>
-                      <a href="">Read reviews >></a>
-                    </div>
-                  </div>
-                  <div class="product-image">
-                    <img src="./images/blue-woman.jpg" alt="Blue Jacket for Women"/>
-                  <div class="product-checkout">
-                    <div class="sizes">
-                      <p>Choose your size:</p>
-                      <ul><li>S</li><li>M</li><li>L</li><li>XL</li></ul>
-                    </div>
-                    <div class="product-checkout-button">
-                      <button class="cta" type="text" onclick="addToCart('Discounted Blue Jacket for Women', 13, './images/blue-woman.jpg')">Add to Cart</button>
-    <!--                  <label class="hidden checkbox-trigger" for="addtocart4"></label>
-                      <input class="hidden checkbox-trigger" type="checkbox" id="addtocart4">
-                      -->
-                      <div class="overlay cart-overlay">
-                        <div class="overlay-inside cart">
-                          <h2>Your Cart</h2>
-     <!--                     <ul>
-                            <li>
-                              <span class="cart-img">
-                                <img src="./images/blue-woman.jpg" alt="Blue Jacket for Women" />
-                              </span>
-                              <span>x1</span>
-                              <span>98 $</span>
-                            </li>
-                            <li>
-                              <span class="cart-img">
-                                <img src="./images/red-man.jpg" alt="Red Jacket for Men" />
-                              </span>
-                              <span>x1</span>
-                              <span>98 $</span>
-                            </li>
-                            <li class="total">
-                              <span>Total</span>
-                              <span>228 $</span>
-                            </li>
-                          </ul>
-                          << class="cta cta-red" type="cta">Check Out</>
-                          <label class="hidden checkbox-trigger" for="order4"></label>
-                          <input class="hidden checkbox-trigger" type="checkbox" id="order4">
-                          <div class="popup order-popup">
-                            <div class="has-background" style="background-image:url('./images/jackets-homepage.jpg');">
-                              <div class="order-popup-text">
-                                <p>Thank you for your order.</p>
-                                <p>We have sent order confirmation to your email.</p>
-                              </div>
-                            </div>
-                          </div>             -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                </div>
               </div>
             </div>
             <div class="product">
               <div class="product-clickable">
-                <label class="hidden checkbox-trigger" for="item5">item5</label>
-                <input class="hidden checkbox-trigger" type="checkbox" id="item5">
-                <img src="./images/black-outlet.jpg" alt="Yellow Jacket for Men"/>
+                <img src="./images/black-outlet.jpg" alt="Black Outlet Jacket for Men"/>
+                <a href="./detailed-pages/outlet-black.html" class="show-product-link">Show product</a>
                 <div>
                   <p>$121</p>
                   <p>Color: Red</p>
                   <p>Suitable for: rain, wind</p>
                 </div>
-                <div class="product-aside">
-                  <div class="product-info">
-                    <div class="product-title">
-                      <h3>About this jacket</h3>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, neque mollitia consequatur velit autem aliquam. Provident tenetur sit suscipit recusandae minus inventore animi similique eaque autem repellat! Illo, repellat labore?</p>
-                    </div>
-                    <div class="product-review">
-                      <h3>Customers reviews</h3>
-                      <div class="stars">
-                        <ul>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                        </ul>
-                      </div>
-                      <a href="">Read reviews >></a>
-                    </div>
-                  </div>
-                  <div class="product-image">
-                    <img src="./images/black-outlet.jpg" alt="Yellow Jacket for Men"/>
-                  <div class="product-checkout">
-                    <div class="sizes">
-                      <p>Choose your size:</p>
-                      <ul><li>S</li><li>M</li><li>L</li><li>XL</li></ul>
-                    </div>
-                    <div class="product-checkout-button">
-                      <button class="cta" type="text" onclick="addToCart('Discounted Black Jacket for Men', 14, './images/black-outlet.jpg')">Add to Cart</button>
-       <!--              <label class="hidden checkbox-trigger" for="addtocart5"></label>
-                      <input class="hidden checkbox-trigger" type="checkbox" id="addtocart5">
-                      --> 
-                      <div class="overlay cart-overlay">
-                        <div class="overlay-inside cart">
-                          <h2>Your Cart</h2>
-        <!--                <ul>
-                          <li>
-                              <span class="cart-img">
-                                <img src="./images/black-outlet.jpg" alt="Red Jacket for Men" />
-                              </span>
-                              <span>x1</span>
-                              <span>98 $</span>
-                            </li>
-                            <li>
-                              <span class="cart-img">
-                                <img src="./images/red-man.jpg" alt="Red Jacket for Men" />
-                              </span>
-                              <span>x1</span>
-                              <span>98 $</span>
-                            </li>
-                            <li class="total">
-                              <span>Total</span>
-                              <span>228 $</span>
-                            </li>
-                          </ul>
-                          <button class="cta cta-red" type="cta">Check Out</button>
-                          <label class="hidden checkbox-trigger" for="order5"></label>
-                          <input class="hidden checkbox-trigger" type="checkbox" id="order5">
-                          <div class="popup order-popup">
-                            <div class="has-background" style="background-image:url('./images/jackets-homepage.jpg');">
-                              <div class="order-popup-text">
-                                <p>Thank you for your order.</p>
-                                <p>We have sent order confirmation to your email.</p>
-                              </div>
-                            </div>
-                          </div>                   -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                </div>
               </div>
             </div>
             <div class="product">
               <div class="product-clickable">
-                <label class="hidden checkbox-trigger" for="item6">item6</label>
-                <input class="hidden checkbox-trigger" type="checkbox" id="item6">
-                <img src="./images/white-outlet.jpg" alt="Black Jacket for Men"/>
-                <div class="underphoto-info">
+                <img src="./images/white-outlet.jpg" alt="White Outlet Jacket for Men"/>
+                <a href="./detailed-pages/outlet-white.html" class="show-product-link">Show product</a>
+                <div>
                   <p>$121</p>
                   <p>Color: Red</p>
                   <p>Suitable for: rain, wind</p>
-                </div>
-                <div class="product-aside">
-                  <div class="product-info">
-                    <div class="product-title">
-                      <h3>About this jacket</h3>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, neque mollitia consequatur velit autem aliquam. Provident tenetur sit suscipit recusandae minus inventore animi similique eaque autem repellat! Illo, repellat labore?</p>
-                    </div>
-                    <div class="product-review">
-                      <h3>Customers reviews</h3>
-                      <div class="stars">
-                        <ul>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                          <li><img src="./images/star-icon.png" alt="star icon"</li>
-                        </ul>
-                      </div>
-                      <a href="">Read reviews >></a>
-                    </div>
-                  </div>
-                  <div class="product-image">
-                    <img src="./images/white-outlet.jpg" alt="Black Jacket for Men"/>
-                  <div class="product-checkout">
-                    <div class="sizes">
-                      <p>Choose your size:</p>
-                      <ul><li>S</li><li>M</li><li>L</li><li>XL</li></ul>
-                    </div>
-                    <div class="product-checkout-button">
-                      <button class="cta" type="text" onclick="addToCart('Discounted White Jacket for Men', 15, './images/white-outlet.jpg')">Add to Cart</button>
-      <!--                <label class="hidden checkbox-trigger" for="addtocart6"></label>
-                      <input class="hidden checkbox-trigger" type="checkbox" id="addtocart6">
-                      -->
-                      <div class="overlay cart-overlay">
-                        <div class="overlay-inside cart">
-                          <h2>Your Cart</h2>
-         <!--                 <ul>
-                            <li>
-                              <span class="cart-img">
-                                <img src="./images/white-outlet.jpg" alt="Red Jacket for Men" />
-                              </span>
-                              <span>x1</span>
-                              <span>98 $</span>
-                            </li>
-                            <li>
-                              <span class="cart-img">
-                                <img src="./images/red-man.jpg" alt="Red Jacket for Men" />
-                              </span>
-                              <span>x1</span>
-                              <span>98 $</span>
-                            </li>
-                            <li class="total">
-                              <span>Total</span>
-                              <span>228 $</span>
-                            </li>
-                          </ul>
-                          <button class="cta cta-red" type="cta">Check Out</button>
-                          <label class="hidden checkbox-trigger" for="order6"></label>
-                          <input class="hidden checkbox-trigger" type="checkbox" id="order6">
-                          <div class="popup order-popup">
-                            <div class="has-background" style="background-image:url('./images/jackets-homepage.jpg');">
-                              <div class="order-popup-text">
-                                <p>Thank you for your order.</p>
-                                <p>We have sent order confirmation to your email.</p>
-                              </div>
-                            </div>
-                          </div>                 -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
                 </div>
               </div>
             </div>

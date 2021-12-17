@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="View available jackets for men from Rainy Days"
+      content="View available jackets for women from Rainy Days"
     />
     <script
       src="https://kit.fontawesome.com/36dc22a110.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/modal.css" />
-    <link rel="stylesheet" href="./styles/cart.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="../styles/cart.css" />
 
-    <title>Rainy days | Men</title>
+
+    <title>Rainy days | Orange Jacket For Men</title>
     <!-- Hotjar Tracking Code for https://silly-volhard-7894ac.netlify.app -->
 <script>
   (function(h,o,t,j,a,r){
@@ -35,7 +36,7 @@
         <div class="logo-section">
           <a href="index.html">
             <img
-              src="./images/rainy-days-logo.png"
+              src="../images/rainy-days-logo.png"
               alt="Rainy Days Logo"
               class="logo"
             />
@@ -43,20 +44,22 @@
           <div class="order-options">
             <p>Free delivery over 100$</p>
             <img
-              src="./images/delivery-icon.png"
+              src="../images/delivery-icon.png"
               alt="Delivery Icon"
               class="delivery-icon"
             />
             <div class="your-cart">
               <p>Your cart</p>
-              <img src="./images/cart-icon.png" alt="Cart Icon" class="cart-icon" />
+              <img src="../images/cart-icon.png" alt="Cart Icon" class="cart-icon"/>
+
               <input onclick="showCart()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
+            
               <div class="overlay cart-overlay">
                 <div class="overlay-inside cart">
                     <h2>Your Cart</h2>
                     <div id="cart-div"></div>
                     <button class="cta cta-red" type="cta" onclick="showModal()">Check Out</button>
-                  </div>
+                  </div>        
                 </a>
               </div>
             </div>
@@ -64,23 +67,23 @@
         </div>
         <div class="navigation">
           <div class="shop-section">
-            <a href="./men.html">Men</a>
-            <a href="./women.html">Women</a>
-            <a href="./outlet.html">Outlet</a>
+            <a href="../men.html">Men</a>
+            <a href="../women.html">Women</a>
+            <a href="../outlet.html">Outlet</a>
           </div>
           <div class="search-section">
             <input type="text" placeholder="What are you looking for?" />
             <img
-              src="./images/search-icon.png"
+              src="../images/search-icon.png"
               alt="Search Icon"
               class="search-icon"
             />
           </div>
           <div class="information-section">
             <a href="#">SIGN IN | SIGN UP</a>
-            <a href="./about.html">About Us
+            <a href="../about.html">About Us
           </a>
-            <a href="./contact.html">Contact
+            <a href="../contact.html">Contact
           </a>
           </div>
         </div>
@@ -90,22 +93,22 @@
         <input type="checkbox" id="hamburger-menu" onclick="handleHamburgerMenuButton()"/>
         <div class="navigation-mobile">
           <div class="shop-section">
-            <a href="men.html">Men</a>
-            <a href="women.html">Women</a>
-            <a href="outlet.html">Outlet</a>
+            <a href="../men.html">Men</a>
+            <a href="../women.html">Women</a>
+            <a href="../outlet.html">Outlet</a>
           </div>
           <div class="search-section">
             <input type="text" placeholder="What are you looking for?" />
             <img
-              src="./images/search-icon.png"
+              src="../images/search-icon.png"
               alt="Search Icon"
               class="search-icon"
             />
           </div>
           <div class="information-section">
             <a href="#">SIGN IN | SIGN UP</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <a href="../about.html">About Us</a>
+            <a href="../contact.html">Contact</a>
           </div>
         </div>
         <div class="info-section">
@@ -117,83 +120,47 @@
       <div class="main-page">
         <h1>Mens' Jackets</h1>
         <section class="main-content-shop">
-          <div class="products">
-            <div class="product">
-              <div class="product-clickable">
-                <img src="./images/red-man.jpg" alt="Red Jacket for Men"/>
-                <a href="./detailed-pages/man-red.html" class="show-product-link">Show product</a>
                 <div>
-                  <p>$121</p>
-                  <p>Color: Red</p>
-                  <p>Suitable for: rain, wind</p>
+                  <div class="product-info">
+                    <div class="product-title">
+                      <h3>About this jacket</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, neque mollitia consequatur velit autem aliquam. Provident tenetur sit suscipit recusandae minus inventore animi similique eaque autem repellat! Illo, repellat labore?</p>
+                    </div>
+                    <div class="product-review">
+                      <h3>Customers reviews</h3><div class="stars">
+                        <ul>
+                          <li><img src="../images/star-icon.png" alt="star icon"></li>
+                          <li><img src="../images/star-icon.png" alt="star icon"></li>
+                          <li><img src="../images/star-icon.png" alt="star icon"></li>
+                          <li><img src="../images/star-icon.png" alt="star icon"></li>
+                          <li><img src="../images/star-icon.png" alt="star icon"></li>
+                        </ul>
+                      </div>
+                      <a href="https://no.trustpilot.com/">Read reviews >></a>
+                    </div>
+                  </div>
+                  <div class="product-image">
+                  <img src="../images/orange-man.jpg" alt="Red Jacket for Men"/>
+                  <div class="product-checkout">
+                    <div class="sizes">
+                      <p>Choose your size:</p>
+                      <ul><li>S</li><li>M</li><li>L</li><li>XL</li></ul>
+                    </div>
+                    <div class="product-checkout-button">
+                      <button class="cta" type="text" onclick="addToCart('Orange Jacket for Men', 9, '../images/orange-man.jpg')">Add to Cart</button>
+                      <div class="overlay cart-overlay">
+                        <div class="overlay-inside cart">
+                          <h2>Your Cart</h2>
+                          <button class="cta cta-red" type="cta">Check Out</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="product">
-              <div class="product-clickable">
-                <img src="./images/military-man.jpg" alt="Military Jacket for Men"/>
-                <a href="./detailed-pages/man-military.html" class="show-product-link">Show product</a>
-                <div>
-                  <p>$121</p>
-                  <p>Color: Red</p>
-                  <p>Suitable for: rain, wind</p>
-                </div>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-clickable">
-                <img src="./images/orange-man.jpg" alt="Orange Jacket for Men"/>
-                <a href="./detailed-pages/man-orange.html" class="show-product-link">Show product</a>
-                <div>
-                  <p>$121</p>
-                  <p>Color: Red</p>
-                  <p>Suitable for: rain, wind</p>
-                </div>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-clickable">
-                <img src="./images/brown-man.jpg" alt="Brown Jacket for Men"/>
-                <a href="./detailed-pages/man-brown.html" class="show-product-link">Show product</a>
-                <div>
-                  <p>$121</p>
-                  <p>Color: Red</p>
-                  <p>Suitable for: rain, wind</p>
-                </div>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-clickable">
-                <img src="./images/yellow-man.jpg" alt="Yellow Jacket for Men"/>
-                <a href="./detailed-pages/man-yellow.html" class="show-product-link">Show product</a>
-                <div>
-                  <p>$121</p>
-                  <p>Color: Red</p>
-                  <p>Suitable for: rain, wind</p>
-                </div>
-              </div>
-            </div>
-            <div class="product">
-              <div class="product-clickable">
-                <img src="./images/black-man.jpg" alt="Black Jacket for Men"/>
-                <a href="./detailed-pages/man-black.html" class="show-product-link">Show product</a>
-                <div>
-                  <p>$121</p>
-                  <p>Color: Red</p>
-                  <p>Suitable for: rain, wind</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <section class="pushing-the-comfort-zone">
-            <h2>Pushing the comfort zone</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad, voluptatibus autem illum, alias dolorum 
-              nesciunt modi facilis debitis corrupti ea accusantium quibusdam assumenda expedita, animi sed nulla hic deserunt.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad, voluptatibus autem illum, alias dolorum 
-              nesciunt modi facilis debitis corrupti ea accusantium quibusdam assumenda expedita, animi sed nulla hic deserunt.</p>
-          </section>
-        </section>
-      </div>
+
     </main>
     <footer>
       <div class="footer">
@@ -237,8 +204,9 @@
               </div>
         
             </div>
-      <script src="./js/cart.js"></script>
-      <script src="./js/modal-script.js"></script>
-      <script src="./js/hamburger-menu-script.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/modal-script.js"></script>
+    <script src="../js/hamburger-menu-script.js"></script>
+
   </body>
 </html>

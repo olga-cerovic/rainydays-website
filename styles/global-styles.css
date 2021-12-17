@@ -14,7 +14,8 @@ a {
   cursor: pointer;
 }
 
-.cta {
+.cta,
+.show-product-link {
   padding: 15px 25px;
   margin: 0 auto;
   border: 0;
@@ -27,6 +28,10 @@ a {
   display: flex;
   align-self: center;
   cursor: pointer;
+}
+
+.show-product-link {
+  margin-bottom: 1rem;
 }
 
 .cta-red {
