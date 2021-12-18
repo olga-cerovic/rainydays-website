@@ -52,10 +52,11 @@
               <p>Your cart</p>
               <img src="../images/cart-icon.png" alt="Cart Icon" class="cart-icon"/>
 
-              <input onclick="showCart()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
+              <input onclick="openOverlay()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
             
               <div class="overlay cart-overlay">
                 <div class="overlay-inside cart">
+                  <span onclick="closeOverlay()" class="cart-closing">X</span>
                     <h2>Your Cart</h2>
                     <div id="cart-div"></div>
                     <button class="cta cta-red" type="cta" onclick="showModal()">Check Out</button>
@@ -119,8 +120,9 @@
     <main>
       <div class="main-page">
         <h1>Mens' Jackets</h1>
-        <section class="main-content-shop">
+        <section class="main-content-shop details-page">
                 <div>
+                  <div class="product-image">
                   <div class="product-info">
                     <div class="product-title">
                       <h3>About this jacket</h3>
@@ -147,7 +149,7 @@
                       <ul><li>S</li><li>M</li><li>L</li><li>XL</li></ul>
                     </div>
                     <div class="product-checkout-button">
-                      <button class="cta" type="text" onclick="addToCart('Brown Jacket for Men', 10, '../images/Brown-man.jpg')">Add to Cart</button>
+                      <button class="cta" type="text" onclick="addToCart('Brown Jacket for Men', 10, '../images/Brown-man.jpg', 150)">Add to Cart</button>
                       <div class="overlay cart-overlay">
                         <div class="overlay-inside cart">
                           <h2>Your Cart</h2>
