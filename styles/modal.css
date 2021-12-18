@@ -20,7 +20,7 @@
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
+  /* animation-name: animatetop; */
   animation-duration: 0.4s;
 }
 
@@ -49,7 +49,6 @@
 
 /*CLOSE BUTTON */
 .close {
-  color: white;
   float: right;
   font-size: 40px;
   font-weight: bold;
@@ -64,6 +63,7 @@
 
 .check-out-modal-body {
   padding: 100px;
-  background-color: orange;
+  background-color: white;
   color: black;
+  text-align: center;
 }

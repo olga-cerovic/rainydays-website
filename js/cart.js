@@ -1,17 +1,18 @@
 let itemsInCart = {};
 
-const addToCart = (name, itemId, src) => {
+const addToCart = (name, itemId, src, price) => {
   if (itemsInCart[itemId]) {
     const selectedItem = itemsInCart[itemId];
     itemsInCart[itemId] = {
       name: selectedItem.name,
       src: selectedItem.src,
+      price: selectedItem.price,
       timesAdded: ++selectedItem.timesAdded,
     };
   } else {
-    itemsInCart[itemId] = { name: name, src: src, timesAdded: 1 };
+    itemsInCart[itemId] = { name: name, src: src, price: price, timesAdded: 1 };
   }
-
+  showCart();
   console.log(itemsInCart);
 };
 
@@ -26,32 +27,21 @@ const showCart = () => {
                         <span class="cart-img">
                         <img src=${item.src} alt=${item.name}/>
                         </span>
+                        <span>${item.price}$</span>
                         <span>x${item.timesAdded}</span>
                         <span>${item.name}</span>
+                        <span>total: ${item.price * item.timesAdded}</span>
                     </li>`;
   }
   cartDiv.innerHTML = `<ul>${liElements}</ul>`;
 };
 
-/*
-<ul>
-  <li>
-    <span class="cart-img">
-      <img src="./images/red-man.jpg" alt="Red Jacket for Men" />
-    </span>
-    <span>x1</span>
-    <span>98 $</span>
-  </li>
-  <li>
-    <span class="cart-img">
-      <img src="./images/red-man.jpg" alt="Red Jacket for Men" />
-    </span>
-    <span>x1</span>
-    <span>98 $</span>
-  </li>
-  <li class="total">
-    <span>Total</span>
-    <span>228 $</span>
-  </li>
-</ul>;
-*/
+const openOverlay = () => {
+  console.log(1230);
+  document.querySelector(".overlay").style.transform = "translateX(0)";
+};
+
+const closeOverlay = () => {
+  console.log(1230);
+  document.querySelector(".overlay").style.transform = "translateX(150%)";
+};

@@ -56,6 +56,11 @@
   color: #6b7f7e;
 }
 
+.product-info-main-text {
+  text-align: left;
+  color: #6b7f7e;
+}
+
 .product-image {
   max-width: 60%;
 }
