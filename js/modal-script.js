@@ -14,3 +14,20 @@ window.onclick = function (event) {
     checkOutModal.style.display = "none";
   }
 };
+
+const showSignUpModal = () => {
+  const signUpModal = document.getElementById("signUpModal");
+  signUpModal.style.display = "block";
+};
+
+const closeSignUpModal = () => {
+  const signUpModal = document.getElementById("signUpModal");
+  signUpModal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  const signUpModal = document.getElementById("checkOutModal");
+  if (event.target == signUpModal) {
+    signUpModal.style.display = "none";
+  }
+};
