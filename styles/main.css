@@ -145,7 +145,7 @@ main h1 {
 
 @media (max-width: 800px) {
   .main-content-about img {
-    max-width: 430px;
+    max-width: 350 px;
   }
 }
 
