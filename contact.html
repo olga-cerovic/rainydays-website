@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./styles/cart.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
     <link rel="stylesheet" href="./styles/contact-form.css" />
+    <link rel="stylesheet" href="../styles/snackbar.css" />
+
     <title>Rainy days | Contact</title>
     <!-- Hotjar Tracking Code for https://silly-volhard-7894ac.netlify.app -->
     <script>
@@ -205,7 +207,7 @@
                     <div class="field-error" id="messageError">
                         Your message must be at least 10 characters.
                     </div>
-                <button class="cta cta-red" type="submit" id="formButton" onclick="validateForm()">Send message</button>
+                <button class="cta cta-red" type="submit" id="formButton" onclick="validateForm(); snackbarForm()">Send message</button>
               </form>
             </div>
           </form>
@@ -254,10 +256,13 @@
               </div>
         
             </div>
+            <div id="snackbarForm">Your message is sent! We will get back to you shortly!</div>
+
     <script src="./js/hamburger-menu-script.js"></script>
     <script src="./js/cart.js"></script>
     <script src="./js/modal-script.js"></script>
     <script src="./js/contact-form.js"></script>
+    <script src="./js/snackbar.js"></script>
 
   </body>
 </html>
