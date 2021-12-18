@@ -117,6 +117,10 @@ main h1 {
   color: #6b7f7e;
 }
 
+.price-details {
+  text-align: left;
+}
+
 /*      ABOUT PAGE       */
 
 .main-content-about {

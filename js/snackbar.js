@@ -1,7 +1,7 @@
 function snackbarFunction() {
-  var x = document.getElementById("snackbar");
-  x.className = "show";
+  const snackbar = document.getElementById("snackbar");
+  snackbar.className = "show";
   setTimeout(function () {
-    x.className = x.className.replace("show", "");
+    snackbar.className = snackbar.className.replace("show", "");
   }, 3000);
 }
