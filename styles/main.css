@@ -70,7 +70,7 @@
   text-align: -webkit-center;
 }
 
-.main-page-index {
+.main-pages {
   margin: 50px auto 0;
   max-width: 1800px;
   text-align: left;
@@ -115,6 +115,34 @@ main h1 {
   font-family: "Montseratt-Medium", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5em;
   color: #6b7f7e;
+}
+
+/*      ABOUT PAGE       */
+
+.main-content-about {
+  text-align: center;
+  font-size: 1.1em;
+  color: #6b7f7e;
+}
+
+.about-us-text {
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content-about img {
+  max-width: 700px;
+  padding-bottom: 1rem;
+}
+
+/*    MEDIA QUERY    */
+
+@media (max-width: 800px) {
+  .main-content-about img {
+    max-width: 450px;
+  }
 }
 
 @media (max-width: 992px) {

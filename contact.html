@@ -35,7 +35,7 @@
     <header>
       <div>
         <div class="logo-section">
-          <a href="index.html">
+          <a href="./index.html">
             <img
               src="./images/rainy-days-logo.png"
               alt="Rainy Days Logo"
@@ -56,25 +56,13 @@
                 alt="Cart Icon"
                 class="cart-icon"
               />
-   <!--           <label class="hidden checkbox-trigger" for="yourcart1"></label>          -->
-              <input onclick="showCart()"
-                class="hidden checkbox-trigger"
-                type="checkbox"
-                id="yourcart1"
-              />
+              <input onclick="openOverlay()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
             <div class="overlay cart-overlay">
-         <!--     <a href="index.html">      -->
                   <div class="overlay-inside cart">
+                    <span onclick="closeOverlay()" class="cart-closing">X</span>
                     <h2>Your Cart</h2>
                     <div id="cart-div"></div>
                     <button class="cta cta-red" type="cta" onclick="showModal()">Check Out</button>
-                 <!--   <label class="hidden checkbox-trigger" for="order3"></label>
-                    <input
-                      class="hidden checkbox-trigger"
-                      type="checkbox"
-                      id="order3"
-                    />
-                    -->
                     <div class="popup order-popup">
                       <div
                         class="has-background"
@@ -124,9 +112,9 @@
         />
         <div class="navigation-mobile">
           <div class="shop-section">
-            <a href="men.html">Men</a>
-            <a href="women.html">Women</a>
-            <a href="outlet.html">Outlet</a>
+            <a href="./men.html">Men</a>
+            <a href="./women.html">Women</a>
+            <a href="./outlet.html">Outlet</a>
           </div>
           <div class="search-section">
             <input type="text" placeholder="Search.." />
@@ -138,8 +126,8 @@
           </div>
           <div class="information-section">
             <a href="#">SIGN IN | SIGN UP</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact</a>
           </div>
         </div>
         <div class="info-section">
@@ -217,7 +205,7 @@
                     <div class="field-error" id="messageError">
                         Your message must be at least 10 characters.
                     </div>
-                <button type="submit" id="formButton" onclick="validateForm()">Send message</button>
+                <button class="cta cta-red" type="submit" id="formButton" onclick="validateForm()">Send message</button>
               </form>
             </div>
           </form>

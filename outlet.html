@@ -49,9 +49,10 @@
             <div class="your-cart">
               <p>Your cart</p>
               <img src="./images/cart-icon.png" alt="Cart Icon" class="cart-icon" />
-              <input onclick="showCart()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
+              <input onclick="openOverlay()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
               <div class="overlay cart-overlay">
                 <div class="overlay-inside cart">
+                  <span onclick="closeOverlay()" class="cart-closing">X</span>
                     <h2>Your Cart</h2>
                     <div id="cart-div"></div>
                     <button class="cta cta-red" type="cta" onclick="showModal()">Check Out</button>
@@ -113,7 +114,7 @@
       </div>
     </header>
     <main>
-      <div class="main-page">
+      <div class="main-pages">
         <h1>Outlet</h1>
         <section class="main-content-shop outlet">
           <div class="products">

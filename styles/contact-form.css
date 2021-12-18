@@ -61,3 +61,7 @@ label {
   font-size: 1.2em;
   text-transform: uppercase;
 }
+
+#contactForm button {
+  margin-top: 2rem;
+}

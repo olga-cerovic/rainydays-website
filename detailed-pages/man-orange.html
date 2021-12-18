@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/modal.css" />
     <link rel="stylesheet" href="../styles/cart.css" />
-
-
+    <link rel="stylesheet" href="../styles/snackbar.css" />
     <title>Rainy days | Orange Jacket For Men</title>
     <!-- Hotjar Tracking Code for https://silly-volhard-7894ac.netlify.app -->
 <script>
@@ -34,7 +33,7 @@
     <header>
       <div>
         <div class="logo-section">
-          <a href="index.html">
+          <a href="../index.html">
             <img
               src="../images/rainy-days-logo.png"
               alt="Rainy Days Logo"
@@ -49,13 +48,15 @@
               class="delivery-icon"
             />
             <div class="your-cart">
+ 
               <p>Your cart</p>
               <img src="../images/cart-icon.png" alt="Cart Icon" class="cart-icon"/>
 
-              <input onclick="showCart()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
+              <input onclick="openOverlay()" class="hidden checkbox-trigger" type="checkbox" id="yourcart1">
             
               <div class="overlay cart-overlay">
                 <div class="overlay-inside cart">
+                  <span onclick="closeOverlay()" class="cart-closing">X</span>
                     <h2>Your Cart</h2>
                     <div id="cart-div"></div>
                     <button class="cta cta-red" type="cta" onclick="showModal()">Check Out</button>
@@ -118,42 +119,39 @@
     </header>
     <main>
       <div class="main-page">
-        <h1>Mens' Jackets</h1>
-        <section class="main-content-shop">
+        <h1>Orange Jacket for Men</h1>
+        <section class="main-content-shop details-page">
                 <div>
-                  <div class="product-info">
-                    <div class="product-title">
-                      <h3>About this jacket</h3>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, neque mollitia consequatur velit autem aliquam. Provident tenetur sit suscipit recusandae minus inventore animi similique eaque autem repellat! Illo, repellat labore?</p>
-                    </div>
-                    <div class="product-review">
-                      <h3>Customers reviews</h3><div class="stars">
-                        <ul>
-                          <li><img src="../images/star-icon.png" alt="star icon"></li>
-                          <li><img src="../images/star-icon.png" alt="star icon"></li>
-                          <li><img src="../images/star-icon.png" alt="star icon"></li>
-                          <li><img src="../images/star-icon.png" alt="star icon"></li>
-                          <li><img src="../images/star-icon.png" alt="star icon"></li>
-                        </ul>
-                      </div>
-                      <a href="https://no.trustpilot.com/">Read reviews >></a>
-                    </div>
-                  </div>
                   <div class="product-image">
-                  <img src="../images/orange-man.jpg" alt="Red Jacket for Men"/>
+                    <div class="product-info-main-text">
+                      <div class="product-title">
+                        <h3>About this jacket</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, neque mollitia consequatur velit autem aliquam. Provident tenetur sit suscipit recusandae minus inventore animi similique eaque autem repellat! Illo, repellat labore?</p>
+                      </div>
+                      <div class="product-review">
+                        <h3>Customers reviews</h3><div class="stars">
+                          <ul>
+                            <li><img src="../images/star-icon.png" alt="star icon"></li>
+                            <li><img src="../images/star-icon.png" alt="star icon"></li>
+                            <li><img src="../images/star-icon.png" alt="star icon"></li>
+                            <li><img src="../images/star-icon.png" alt="star icon"></li>
+                            <li><img src="../images/star-icon.png" alt="star icon"></li>
+                          </ul>
+                        </div>
+                        <a href="https://no.trustpilot.com/">Read reviews >></a>
+                      </div>
+                      </div>
+
+                  <img src="../images/orange-man.jpg" alt="Orange Jacket for Men"/>
                   <div class="product-checkout">
                     <div class="sizes">
                       <p>Choose your size:</p>
                       <ul><li>S</li><li>M</li><li>L</li><li>XL</li></ul>
+                      
                     </div>
                     <div class="product-checkout-button">
-                      <button class="cta" type="text" onclick="addToCart('Orange Jacket for Men', 9, '../images/orange-man.jpg')">Add to Cart</button>
-                      <div class="overlay cart-overlay">
-                        <div class="overlay-inside cart">
-                          <h2>Your Cart</h2>
-                          <button class="cta cta-red" type="cta">Check Out</button>
-                        </div>
-                      </div>
+                      <button class="cta" type="text" onclick="addToCart('Orange Jacket for Men', 9, '../images/orange-man.jpg', 199); snackbarFunction()">Add to Cart</button>                      
+
                     </div>
                   </div>
                   </div>
@@ -192,21 +190,26 @@
         </div>
       </div>
     </footer>
-            <!--Modal -->
+            <!--Check Out Modal -->
             <div id="checkOutModal" class="check-out-modal">
               <div class="check-out-modal-content">
                   <span class="close" onclick="closeModal()">&times;</span>
                 <div class="check-out-modal-body">
-                  <p>Thank you for your purchase</p>
+                  <p>Thank you for your purchase! We will email you shortly with your order details.</p>
                 </div>
                 </div>
               </div>
               </div>
         
             </div>
+
+            <div id="snackbar">Some text some message..</div>
+
     <script src="../js/cart.js"></script>
     <script src="../js/modal-script.js"></script>
     <script src="../js/hamburger-menu-script.js"></script>
+    <script src="../js/snackbar.js"></script>
+
 
   </body>
 </html>
