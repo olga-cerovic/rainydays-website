@@ -154,14 +154,6 @@ header .logo-section {
   display: none;
 }
 
-/*#hamburger-menu:checked ~ .navigation-mobile {
-  display: block;
-  color: #fff;
-  position: absolute;
-  left: 0;
-  right: 0;
-}*/
-
 .test-class {
   display: block;
   color: #fff;
