@@ -121,26 +121,6 @@ main h1 {
   text-align: left;
 }
 
-/*      ABOUT PAGE       */
-
-.main-content-about {
-  text-align: center;
-  font-size: 1.1em;
-  color: #6b7f7e;
-}
-
-.about-us-text {
-  text-align: left;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main-content-about img {
-  max-width: 700px;
-  padding-bottom: 1rem;
-}
-
 /*    MEDIA QUERY    */
 
 @media (max-width: 992px) {
@@ -149,11 +129,5 @@ main h1 {
   }
   .best-deals {
     flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 800px) {
-  .main-content-about img {
-    max-width: 480px;
   }
 }
