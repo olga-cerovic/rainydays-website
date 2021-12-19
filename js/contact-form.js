@@ -65,6 +65,15 @@ function validateForm() {
   ) {
     button.disabled = false;
     formError.innerHTML = "Form submited successfully.";
+    snackbarForm();
   }
   console.log("hello11111");
+}
+
+function snackbarForm() {
+  const snackbarForm = document.getElementById("snackbarForm");
+  snackbarForm.className = "show";
+  setTimeout(function () {
+    snackbarForm.className = snackbarForm.className.replace("show", "");
+  }, 3000);
 }

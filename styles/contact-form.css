@@ -1,6 +1,7 @@
+/*
 * {
   box-sizing: border-box;
-}
+} */
 
 .contact-form-container {
   max-width: 760px;
@@ -18,7 +19,6 @@ input {
   width: 100%;
   margin-top: 2px;
   padding: 10px;
-  font-size: 16px;
 }
 
 #message {
