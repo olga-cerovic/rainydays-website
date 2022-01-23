@@ -69,12 +69,14 @@
             <a href="./outlet.html">Outlet</a>
           </div>
           <div class="search-section">
-            <input type="text" placeholder="What are you looking for?" />
-            <img
+            <input id="inputField" type="text" placeholder="What are you looking for?" />
+            <button class="search-button">Search</button>
+<!--            <img
               src="./images/search-icon.png"
               alt="Search Icon"
               class="search-icon"
             />
+            -->
           </div>
           <div class="information-section">
             <a href="#">SIGN IN | SIGN UP</a>
@@ -95,12 +97,14 @@
             <a href="outlet.html">Outlet</a>
           </div>
           <div class="search-section">
-            <input type="text" placeholder="What are you looking for?" />
-            <img
+            <input id="inputField" type="text" placeholder="What are you looking for?" />
+            <button class="search-button">Search</button>
+<!--            <img
               src="./images/search-icon.png"
               alt="Search Icon"
               class="search-icon"
             />
+            -->
           </div>
           <div class="information-section">
             <a href="#">SIGN IN | SIGN UP</a>
@@ -115,8 +119,22 @@
     </header>
     <main>
       <div class="main-pages">
+        <div class="loading-indicator"></div>
+
         <h1>Outlet</h1>
-        <section class="main-content-shop outlet">
+         <section class="main-content-shop outlet">
+
+        <div class="products"></div>
+        <section class="pushing-the-comfort-zone">
+          <h2>Pushing the comfort zone</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad, voluptatibus autem illum, alias dolorum 
+            nesciunt modi facilis debitis corrupti ea accusantium quibusdam assumenda expedita, animi sed nulla hic deserunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad, voluptatibus autem illum, alias dolorum 
+            nesciunt modi facilis debitis corrupti ea accusantium quibusdam assumenda expedita, animi sed nulla hic deserunt.</p>
+        </section>
+      </section>
+         </section>
+<!--        <section class="main-content-shop outlet">
           <div class="products">
             <div class="product">
               <div class="product-clickable">
@@ -165,6 +183,8 @@
               nesciunt modi facilis debitis corrupti ea accusantium quibusdam assumenda expedita, animi sed nulla hic deserunt.</p>
           </section>
         </section>
+        -->
+
       </div>
     </main>
     <footer>
@@ -220,5 +240,6 @@
                 </div>
     <script src="./js/cart.js"></script>
     <script src="./js/modal-script.js"></script>
+    <script src="./js/wp-products.js"></script>
   </body>
 </html>

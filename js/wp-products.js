@@ -1,15 +1,23 @@
 const baseUrl =
-  "https://olgacerovic.com/rainy-days/wp-json/wc/v3/products?consumer_key=ck_92e53f56a8b5ef67bac0f725653ad59cad14474e&consumer_secret=cs_f9d3a80620c9bb4aabe29aa34ec8a7d1bb6f0800";
+  "https://olgacerovic.com/rainy-days/wp-json/wc/v3/products?per_page=100&consumer_key=ck_92e53f56a8b5ef67bac0f725653ad59cad14474e&consumer_secret=cs_f9d3a80620c9bb4aabe29aa34ec8a7d1bb6f0800";
 const productsDiv = document.querySelector(".products");
 const loadingIndicator = document.querySelector(".loading-indicator");
+const searchButton = document.querySelector(".search-button");
+const inputField = document.querySelector("#inputField");
 
-const getProducts = async (url) => {
+const getProducts = async (url, searchInputValue = null) => {
   loadingIndicator.innerHTML = "Loading...";
+  productsDiv.innerHTML = "";
   try {
     const response = await fetch(url);
     const result = await response.json();
-    createHtml(result);
-    console.log(result);
+    const filteredResults = searchInputValue
+      ? result.filter((product) =>
+          product.name.toLowerCase().includes(searchInputValue.toLowerCase())
+        )
+      : result;
+    createHtml(filteredResults);
+    console.log(filteredResults);
   } catch (error) {
     console.log(error);
   }
@@ -17,11 +25,17 @@ const getProducts = async (url) => {
 };
 
 getProducts(baseUrl);
-
 const createHtml = (products) => {
-  console.log(products);
+  const isForWomen = window.location.href.includes("women");
+  const isForOutlet = window.location.href.includes("outlet");
+  const categorySlug = isForWomen
+    ? "jacket-for-women"
+    : isForOutlet
+    ? "outlet"
+    : "jacket-for-men";
   products.forEach((element) => {
-    productsDiv.innerHTML += `
+    if (element.categories.find((category) => category.slug === categorySlug)) {
+      productsDiv.innerHTML += `
         <div class="product">
               <div class="product-clickable">
                 <img src="${element.images[0].src}"/>
@@ -35,5 +49,10 @@ const createHtml = (products) => {
               
             </div>
         `;
+    }
   });
+};
+
+searchButton.onclick = function searchJackets() {
+  getProducts(baseUrl, inputField.value);
 };

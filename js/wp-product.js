@@ -57,7 +57,8 @@ const createHtml = (product, productVariations) => {
               <div class="product-checkout">
                 <div class="sizes">
                   <p>Choose your size:</p>
-                  <ul> ${productVariations.forEach(
+                  <ul>
+                  ${productVariations.map(
                     (variation) => `<li>${variation.attributes[0].option}</li>`
                   )}
                   </ul>
