@@ -69,9 +69,9 @@ const createHtml = (product, productVariations) => {
                   <p>Suitable for: rain, wind</p>
                 </div>
                 <div class="product-checkout-button">
-                  <button class="cta" type="text" onclick="addToCart(${
+                  <button class="cta" type="text" onclick="addToCart('${
                     product.name
-                  }, ${product.id}, ${product.images[0].src}, ${
+                  }', ${product.id}, '${product.images[0].src}', ${
     product.price
   }); snackbarFunction()">Add to Cart</button>                      
 
