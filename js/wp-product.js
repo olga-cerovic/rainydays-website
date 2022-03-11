@@ -56,12 +56,13 @@ const createHtml = (product, productVariations) => {
   }"/>
               <div class="product-checkout">
                 <div class="sizes">
-                  <p>Choose your size:</p>
-                  <ul>
-                  ${productVariations.map(
-                    (variation) => `<li>${variation.attributes[0].option}</li>`
-                  )}
-                  </ul>
+                  <label for="size">Choose size:</label>
+                  <select name="size" id="size">
+                    ${productVariations.map(
+                      (variation) =>
+                        `<option value="${variation.attributes[0].option}">${variation.attributes[0].option}</option>`
+                    )}
+                  </select>
                 </div>
                 <div class="price-details">
                 <p>Price: nok ${product.price}</p>

@@ -1,23 +1,35 @@
 let itemsInCart = {};
 
 const addToCart = (name, itemId, src, price) => {
-  if (itemsInCart[itemId]) {
-    const selectedItem = itemsInCart[itemId];
-    itemsInCart[itemId] = {
+  const sizeValue = document.getElementById("size").value;
+
+  // console.log(itemsInCart[itemId]?.size, sizeValue);
+
+  const itemKey = `${itemId}-${sizeValue}`;
+  if (itemsInCart[itemKey]) {
+    const selectedItem = itemsInCart[itemKey];
+    itemsInCart[itemKey] = {
       name: selectedItem.name,
       src: selectedItem.src,
       price: selectedItem.price,
       timesAdded: ++selectedItem.timesAdded,
+      size: selectedItem.size,
     };
   } else {
-    itemsInCart[itemId] = { name: name, src: src, price: price, timesAdded: 1 };
+    itemsInCart[itemKey] = {
+      name: name,
+      src: src,
+      price: price,
+      timesAdded: 1,
+      size: sizeValue,
+    };
   }
   showCart();
-  console.log(itemsInCart);
+  // console.log(itemsInCart);
 };
 
 const showCart = () => {
-  console.log("123");
+  // console.log("123");
   const cartDiv = document.querySelector("#cart-div");
   let liElements = "";
 
@@ -28,6 +40,7 @@ const showCart = () => {
                         <img src=${item.src} alt=${item.name}/>
                         </span>
                         <span>${item.price}$</span>
+                        <span>${item.size}</span>
                         <span>x${item.timesAdded}</span>
                         <span>${item.name}</span>
                         <span>total: ${item.price * item.timesAdded}</span>
