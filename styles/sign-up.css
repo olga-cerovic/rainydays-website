@@ -24,6 +24,16 @@
   padding: 10px 50px;
 }
 
+.sign-up-section input {
+  all: unset;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
 @media (max-width: 576px) {
   .sign-up-section {
     flex: auto;
