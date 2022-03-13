@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
     <link rel="stylesheet" href="./styles/snackbar.css" />
+    <link rel="stylesheet" href="./styles/sign-up.css" />
 
 
     <title>Rainy days | Home</title>
@@ -200,9 +201,18 @@
         placeholder="Your Email"
         class="input"
       />
-        <button onclick="showSignUpModal()" class="cta cta-red" type="cta">Sign Up</button>
+        <button onclick="showSignUpModal()" id="subscribeButton" class="cta cta-red" type="cta" disabled>Sign Up</button>
       </section>
     </div>
+          <!--Check Out Modal -->
+          <div id="signUpModal" class="sign-up-modal">
+            <div class="sign-up-modal-content">
+              <span class="close" onclick="closeSignUpModal()">&times;</span>
+              <div class="sign-up-modal-body">
+                <p id="signUpModalText"></p>
+              </div>
+            </div>
+          </div>
     </main>
     <footer>
       <div class="footer">

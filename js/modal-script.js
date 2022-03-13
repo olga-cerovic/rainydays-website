@@ -15,9 +15,29 @@ window.onclick = function (event) {
   }
 };
 
+// const showSignUpModal = () => {
+//   const signUpModal = document.getElementById("signUpModal");
+//   signUpModal.style.display = "block";
+// };
+
+// const closeSignUpModal = () => {
+//   const signUpModal = document.getElementById("signUpModal");
+//   signUpModal.style.display = "none";
+// };
+
+// window.onclick = function (event) {
+//   const signUpModal = document.getElementById("checkOutModal");
+//   if (event.target == signUpModal) {
+//     signUpModal.style.display = "none";
+//   }
+// };
+
 const showSignUpModal = () => {
-  const signUpModal = document.getElementById("signUpModal");
-  signUpModal.style.display = "block";
+  const subscribeModal = document.getElementById("signUpModal");
+  const subscribeModalText = document.getElementById("signUpModalText");
+  const emailValue = document.getElementById("subscribeInput").value;
+  subscribeModal.style.display = "block";
+  subscribeModalText.innerHTML = `${emailValue}, thank you for subscribing!`;
 };
 
 const closeSignUpModal = () => {
@@ -26,8 +46,20 @@ const closeSignUpModal = () => {
 };
 
 window.onclick = function (event) {
-  const signUpModal = document.getElementById("checkOutModal");
-  if (event.target == signUpModal) {
-    signUpModal.style.display = "none";
+  const subscribeModal = document.getElementById("signUpModal");
+  if (event.target == subscribeModal) {
+    subscribeModal.style.display = "none";
+  }
+};
+
+const onSubscribeInputChange = () => {
+  const subscribeInputValue = document.getElementById("subscribeInput").value;
+  const subscribeInputIsValid = document
+    .getElementById("subscribeInput")
+    .checkValidity();
+  if (subscribeInputValue === "" || subscribeInputIsValid === false) {
+    document.getElementById("subscribeButton").disabled = true;
+  } else {
+    document.getElementById("subscribeButton").disabled = false;
   }
 };

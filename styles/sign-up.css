@@ -34,6 +34,11 @@
   background-color: white;
 }
 
+#subscribeButton:disabled {
+  cursor: not-allowed;
+  background-color: #6b7f7e;
+}
+
 @media (max-width: 576px) {
   .sign-up-section {
     flex: auto;

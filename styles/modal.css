@@ -60,7 +60,32 @@
   cursor: pointer;
 }
 
-.check-out-modal-body {
+.sign-up-modal {
+  display: none;
+  position: fixed;
+  z-index: 100000;
+  padding-top: 300px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+/* MODAL CONTENT */
+.sign-up-modal-content {
+  position: relative;
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 0;
+  border: 1px solid grey;
+  width: 80%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}
+
+.sign-up-modal-body {
   padding: 100px;
   background-color: white;
   color: black;
